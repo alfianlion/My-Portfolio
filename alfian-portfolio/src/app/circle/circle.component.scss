@@ -10,7 +10,7 @@ html{
     justify-content: center;
 }
 
-:host .circle{
+:host .main-circle{
     background-color: $main-circle-background-color;
     border-radius: $radius;
     min-height: $min-height-circle;
@@ -25,8 +25,8 @@ html{
 .profile-circle{
     background-color: $profile-circle-background-color;
     border-radius: $radius;
-    min-height: $min-height-circle / 2;
-    min-width: $min-width-circle / 2;
+    min-height: calc($min-height-circle / 2);
+    min-width: calc($min-width-circle / 2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,8 +34,8 @@ html{
 
 .image{
     border-radius: 100%;
-    width: $min-width-circle / 2.4;
-    height: $min-height-circle / 2.4;
+    width: calc($min-width-circle / 2.4);
+    height: calc($min-height-circle / 2.4);
 }
 
 h1{

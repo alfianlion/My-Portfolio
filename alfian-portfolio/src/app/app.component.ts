@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'alfian-portfolio';
 
-  constructor () {}
-  
-  ngOnInit() {
-    
-  }
-}
+  bottomLeft = `<p>Hello there</p>`
+// bottomLeft: string = `
+// <app-circle id="left-right-corner"></app-circle>
+// `;
+} 
+

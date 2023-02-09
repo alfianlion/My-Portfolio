@@ -1,4 +1,19 @@
-.main-circle{
+$top-right-corner-position-top: -20vw;
+$top-right-corner-position-left: 75vw;
+
+.main-content-circle{
     display: flex;
     justify-content: center;
+}
+
+#top-right-corner{
+    position: absolute;
+    top: $top-right-corner-position-top;
+    left: $top-right-corner-position-left;
+}
+
+#bottom-left-corner{
+    position: absolute;
+    bottom: $top-right-corner-position-top;
+    right: $top-right-corner-position-left;
 }
