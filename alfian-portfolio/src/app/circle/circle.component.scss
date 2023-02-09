@@ -5,23 +5,6 @@ $min-height-circle: 100vh;
 $min-width-circle: 800px;
 $radius: 100%;
 
-html{
-    display: flex;
-    justify-content: center;
-}
-
-:host .main-circle{
-    background-color: $main-circle-background-color;
-    border-radius: $radius;
-    min-height: $min-height-circle;
-    min-width: $min-width-circle;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: $text-color;
-}
-
 .profile-circle{
     background-color: $profile-circle-background-color;
     border-radius: $radius;

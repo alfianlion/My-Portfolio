@@ -2,8 +2,68 @@
 @import "./normalize.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
+$top-right-corner-position-top: -20vw;
+$top-right-corner-position-left: 75vw;
+$main-circle-background-color: #023047;
+$text-color: white;
+$min-height-circle: 100vh;
+$min-width-circle: 800px;
+$radius: 100%;
+
+
 html{
     background-color: #EEEEEE;
     font-family: 'Roboto Mono', monospace;
-    overflow: hidden;
+    // overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.main-circle{
+    background-color: $main-circle-background-color;
+    border-radius: $radius;
+    min-height: $min-height-circle;
+    min-width: $min-width-circle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $text-color;
+}
+
+.main-content-circle{
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    position:relative;
+    margin-top: 400px;
+}
+
+footer{
+    position: relative;
+    text-align: right;
+    margin-top: 250px;
+    margin-right: 130px;
+}
+
+option{
+    margin: 10px 0px 10px 200px;
+}
+
+#top-right-corner{
+    display: block;
+    position: absolute;
+    top: $top-right-corner-position-top;
+    left: $top-right-corner-position-left;
+}
+
+#bottom-left-corner{
+    display: block;
+    position: absolute;
+    bottom: $top-right-corner-position-top;
+    right: $top-right-corner-position-left;
 }

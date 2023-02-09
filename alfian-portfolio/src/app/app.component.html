@@ -1,5 +1,15 @@
 <app-circle class="main-content-circle"></app-circle>
-<app-circle id="top-right-corner"></app-circle>
-<app-circle id="bottom-left-corner"></app-circle>
+<div class="main-circle" id="top-right-corner">
+    <nav>
+        <option value="home" name="nav">Home</option>
+        <option value="about_me" name="nav">About Me</option>
+        <option value="projects" name="nav">Projects</option>
+        <option value="contact" name="nav">Contact</option>
+    </nav>
+</div>
+<div class="main-circle" id="bottom-left-corner">
+    <footer>
+        <p>Copyright Nuralfian <br> All Rights Reserved.</p>
+    </footer>
+</div>
 
-<div [innerHTML]="bottomLeft"></div>
