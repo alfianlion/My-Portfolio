@@ -1,15 +1,16 @@
-<app-circle class="main-content-circle"></app-circle>
 <div class="main-circle" id="top-right-corner">
     <nav>
-        <option value="home" name="nav">Home</option>
-        <option value="about_me" name="nav">About Me</option>
-        <option value="projects" name="nav">Projects</option>
-        <option value="contact" name="nav">Contact</option>
+        <a routerLink="/home" routerLinkActive="true" ariaCurrentWhenActive="page">Home</a>
+        <a routerLink="/about-me" routerLinkActive="true" ariaCurrentWhenActive="page">About Me</a>
+        <a routerLink="/projects" routerLinkActive="true" ariaCurrentWhenActive="page">Projects</a>
+        <a routerLink="/contact" routerLinkActive="true" ariaCurrentWhenActive="page">Contact</a>
     </nav>
 </div>
+
+<router-outlet></router-outlet>
+
 <div class="main-circle" id="bottom-left-corner">
     <footer>
         <p>Copyright Nuralfian <br> All Rights Reserved.</p>
     </footer>
 </div>
-

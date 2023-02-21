@@ -5,6 +5,7 @@
 $top-right-corner-position-top: -20vw;
 $top-right-corner-position-left: 75vw;
 $main-circle-background-color: #023047;
+$profile-circle-background-color: #219EBC;
 $text-color: white;
 $min-height-circle: 100vh;
 $min-width-circle: 800px;
@@ -18,6 +19,28 @@ html{
     display: flex;
     justify-content: center;
 
+}
+
+.profile-circle{
+    background-color: $profile-circle-background-color;
+    border-radius: $radius;
+    min-height: calc($min-height-circle / 2);
+    min-width: calc($min-width-circle / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    border-radius: 100%;
+    width: calc($min-width-circle / 2.4);
+    height: calc($min-height-circle / 2.4);
+}
+
+h1{
+    font-size: 3.5rem;
+    margin: 10px 0px;
+    
 }
 
 .main-circle{
@@ -38,8 +61,10 @@ html{
 }
 
 nav{
+    display: flex;
+    flex-direction: column;
     position:relative;
-    margin-top: 400px;
+    margin-top: 370px;
 }
 
 footer{
@@ -49,7 +74,9 @@ footer{
     margin-right: 130px;
 }
 
-option{
+a{
+    color: inherit;
+    text-decoration: none;
     margin: 10px 0px 10px 200px;
 }
 

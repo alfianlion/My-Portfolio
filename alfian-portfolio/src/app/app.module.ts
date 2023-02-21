@@ -3,12 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CircleComponent } from './circle/circle.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
+import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CircleComponent,
+    AboutmeComponent,
+    HomeComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -17,7 +21,6 @@ import { CircleComponent } from './circle/circle.component';
   providers: [],
   bootstrap: [AppComponent],
   exports: [
-    CircleComponent
   ]
 })
 export class AppModule { }
